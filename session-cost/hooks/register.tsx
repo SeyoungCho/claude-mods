@@ -130,7 +130,7 @@ export const register: Register = (on) => {
           <Text color="suggestion" bold tabular>
             {fmt(total)}
           </Text>
-          <Text color="subtle"> tokens </Text>
+          <Text color="subtle">{" tokens   "}</Text>
           {chip("in", fmt(input), "text")}
           {dot}
           {chip("out", fmt(output), "text")}
