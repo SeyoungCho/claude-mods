@@ -64,6 +64,8 @@ export const register: Register = on => {
   on('ui.render', { component: 'AbovePrompt' }, async ($, e, next) => {
     if (e.props.hasSurvey) return next(e)
 
+    // What the plugins beneath (and the engine) draw here, kept so their bands still show.
+    const below = await next(e)
     const t = await read($, tokens)
     const cost = await read($, usd)
     const { Box, Text } = $.ui.resolve(e)
@@ -85,7 +87,7 @@ export const register: Register = on => {
     )
     const dot = <Text color="subtle"> · </Text>
 
-    return (
+    const mine = (
       <Box
         borderStyle="round"
         borderColor="claude"
@@ -121,6 +123,13 @@ export const register: Register = on => {
         <Text color="success" bold tabular>
           {cost === null ? '$ —' : '$' + cost.toFixed(2)}
         </Text>
+      </Box>
+    )
+
+    return (
+      <Box flexDirection="column">
+        {below}
+        {mine}
       </Box>
     )
   })
