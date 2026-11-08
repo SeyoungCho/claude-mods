@@ -38,11 +38,11 @@ Mods need Claude Code v2.1.287 or later (Desktop app v2.1.286 or later).
 
 ## 한국어
 
-모드는 Claude Code의 화면과 동작을 바꾸는 플러그인이에요. 이 레포는 `syc-claude-mods`라는 플러그인 마켓플레이스라서 안에 있는 모드를 이름으로 설치할 수 있어요.
+모드는 Claude Code의 화면과 동작을 바꾸는 플러그인입니다. 이 저장소는 `syc-claude-mods`라는 플러그인 마켓플레이스이므로 안에 있는 모드를 이름으로 설치할 수 있습니다.
 
 | 모드 | 하는 일 | 동작하는 곳 |
 | --- | --- | --- |
-| [`session-cost`](./session-cost) | 이 세션에서 쓴 토큰 수와 USD 비용(API 정가 기준)을 프롬프트 위 띠에 보여줘요 | 터미널, 데스크톱 앱 Code 탭 |
+| [`session-cost`](./session-cost) | 현재 세션에서 쓴 토큰 수와 USD 비용(API 정가 기준)을 프롬프트 위 띠에 표시합니다 | 터미널, 데스크톱 앱 Code 탭 |
 
 ### 설치
 
@@ -58,6 +58,6 @@ Mods need Claude Code v2.1.287 or later (Desktop app v2.1.286 or later).
 claude plugin install <모드 이름> --marketplace SeyoungCho/claude-mods
 ```
 
-데스크톱 앱에서는 프롬프트 옆 **+** → **Plugins** → **Add marketplace**에 `SeyoungCho/claude-mods`를 넣고 **Add plugin**을 누르면 돼요.
+데스크톱 앱에서는 프롬프트 옆 **+** → **Plugins** → **Add marketplace**에 `SeyoungCho/claude-mods`를 넣고 **Add plugin**을 누르면 됩니다.
 
-Claude Code v2.1.287 이상(데스크톱 앱 v2.1.286 이상)이 필요해요.
+Claude Code v2.1.287 이상(데스크톱 앱 v2.1.286 이상)이 필요합니다.
