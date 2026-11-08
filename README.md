@@ -38,7 +38,7 @@ Mods need Claude Code v2.1.287 or later (Desktop app v2.1.286 or later).
 
 ## 한국어
 
-모드는 Claude Code의 화면과 동작을 바꾸는 플러그인이에요. 이 레포는 `syc-claude-mods`라는 플러그인 마켓플레이스라서, 안에 있는 모드를 이름으로 설치할 수 있어요.
+모드는 Claude Code의 화면과 동작을 바꾸는 플러그인이에요. 이 레포는 `syc-claude-mods`라는 플러그인 마켓플레이스라서 안에 있는 모드를 이름으로 설치할 수 있어요.
 
 | 모드 | 하는 일 | 동작하는 곳 |
 | --- | --- | --- |
