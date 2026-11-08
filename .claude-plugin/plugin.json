@@ -1,0 +1,6 @@
+{
+  "name": "session-cost",
+  "version": "0.1.0",
+  "description": "Shows this session's token usage and USD cost above the prompt",
+  "types": "./types/index.d.ts"
+}

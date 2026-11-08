@@ -1,0 +1,5 @@
+{
+  "name": "session-cost",
+  "owner": { "name": "SeyoungCho" },
+  "plugins": [{ "name": "session-cost", "source": "./" }]
+}
