@@ -14,7 +14,7 @@ A mod is a plugin that changes how Claude Code looks and behaves. This repositor
 
 | Mod | What it does | Where it works |
 | --- | --- | --- |
-| [`session-cost`](./session-cost) | Shows this session's token usage and USD cost in a band above the prompt | Terminal and the Desktop app's Code tab |
+| [`session-cost`](./session-cost) | Shows this session's token usage and USD cost (at API list prices) in a band above the prompt | Terminal and the Desktop app's Code tab |
 
 ### Install
 
@@ -42,7 +42,7 @@ Mods need Claude Code v2.1.287 or later (Desktop app v2.1.286 or later).
 
 | 모드 | 하는 일 | 동작하는 곳 |
 | --- | --- | --- |
-| [`session-cost`](./session-cost) | 이 세션에서 쓴 토큰 수와 USD 비용을 프롬프트 위 띠에 보여줘요 | 터미널, 데스크톱 앱 Code 탭 |
+| [`session-cost`](./session-cost) | 이 세션에서 쓴 토큰 수와 USD 비용(API 정가 기준)을 프롬프트 위 띠에 보여줘요 | 터미널, 데스크톱 앱 Code 탭 |
 
 ### 설치
 

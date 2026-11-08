@@ -1,11 +1,12 @@
 {
   "name": "syc-claude-mods",
   "owner": { "name": "SeyoungCho" },
+  "description": "Small mods for Claude Code by SeyoungCho",
   "plugins": [
     {
       "name": "session-cost",
       "source": "./session-cost",
-      "description": "Shows this session's token usage and USD cost above the prompt"
+      "description": "Shows this session's token usage and USD cost above the prompt. The cost is Claude Code's own estimate at API list prices: close to the bill on an API key, an equivalent value (not a charge) on a Pro or Max plan."
     }
   ]
 }
