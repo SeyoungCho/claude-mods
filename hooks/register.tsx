@@ -17,6 +17,20 @@ const empty = (since: number): Tokens => ({
   since,
 })
 
+// Whether a drawing handed up by next(e) shows anything: the engine's own
+// node (what an empty band resolves to) and empty Boxes show nothing.
+const shows = (node: unknown): boolean => {
+  if (node === null || node === undefined || node === false) return false
+  if (typeof node === 'string') return node.trim() !== ''
+  if (typeof node === 'number' || node === true) return true
+  if (Array.isArray(node)) return node.some(shows)
+  if (typeof node !== 'object') return false
+  const el = node as { type?: string; props?: Record<string, unknown>; children?: unknown[] }
+  if (el.type === 'engine') return false
+  if (el.type === 'Box') return Boolean(el.props?.borderStyle) || (el.children ?? []).some(shows)
+  return true
+}
+
 const fmt = (n: number): string =>
   n >= 1e6 ? (n / 1e6).toFixed(2) + 'M' : n >= 1e3 ? (n / 1e3).toFixed(1) + 'k' : String(n)
 
@@ -92,6 +106,7 @@ export const register: Register = on => {
         borderStyle="round"
         borderColor="claude"
         paddingX={1}
+        marginTop={shows(below) ? 1 : 0}
         flexDirection="row"
         justifyContent="space-between"
         flexWrap="wrap"
