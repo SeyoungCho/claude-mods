@@ -1,5 +1,11 @@
 {
-  "name": "session-cost",
+  "name": "syc-claude-mods",
   "owner": { "name": "SeyoungCho" },
-  "plugins": [{ "name": "session-cost", "source": "./" }]
+  "plugins": [
+    {
+      "name": "session-cost",
+      "source": "./session-cost",
+      "description": "Shows this session's token usage and USD cost above the prompt"
+    }
+  ]
 }
